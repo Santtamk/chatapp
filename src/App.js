@@ -1,24 +1,17 @@
-import logo from './logo.svg';
+
+import { useState } from 'react';
 import './App.css';
+import Main from './components/main/Main';
+import SideNav from './components/sidenav/SideNav';
 
 function App() {
+  const [navBarOpen, setNavBarOpen] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='bg-text01-gradient flex'>
+        <SideNav navBarOpen={navBarOpen} setNavBarOpen={setNavBarOpen} className="lg:w-1/5	"/>
+        <Main navBarOpen={navBarOpen} className="lg:w-4/5"/>
+      </div>
+      
   );
 }
 
