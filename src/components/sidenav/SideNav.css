@@ -1,0 +1,24 @@
+.sidenav{
+    margin: 1rem 1rem;
+}
+.SidebarItem-text{ 
+font-family: Inter;
+font-size: 14px;
+font-weight: 600;
+color: #5B5967;
+}
+
+.SidebarItem-text:hover{
+    background-color: #D4EFFF;
+    color: #0076BD;
+}
+
+.sideNav-button{
+    border-color: #7B96B8;
+    color: #7B96B8;
+    background-color: #FFFFFF;
+}
+
+.sideNav-button-main{
+    margin-right: -1.5rem;
+}
