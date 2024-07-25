@@ -1,6 +1,8 @@
-import Main from "../main/Main";
+
 
 const SideNav = ({ navBarOpen, setNavBarOpen, children }) => {
+  
+
   return (
     <div className="flex flex-start">
       <aside className="lg:flex lg:flex-col lg:w-1/5 lg:bg-secondary lg:min-h-screen ">
@@ -43,20 +45,15 @@ const SideNav = ({ navBarOpen, setNavBarOpen, children }) => {
         </div>
       </aside>
       <div className="lg:w-4/5 w-full">
-        
-          <div
-            className={`font-bold text-3xl text-primary ${
-              navBarOpen ? "hidden" : ""
-            } lg:block pl-4 h-auto`}
-          >
-            Bot AI
-          </div>
-
-            
-        <div>
-            {children}
+        <div
+          className={`font-bold text-3xl text-primary ${
+            navBarOpen ? "hidden" : ""
+          } lg:block pl-4 h-auto`}
+        >
+          Bot AI
         </div>
 
+        <div>{children}</div>
       </div>
     </div>
   );
