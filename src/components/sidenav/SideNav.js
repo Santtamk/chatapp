@@ -1,8 +1,4 @@
-
-
 const SideNav = ({ navBarOpen, setNavBarOpen, children }) => {
-  
-
   return (
     <div className="flex flex-start">
       <aside className="lg:flex lg:flex-col lg:w-1/5 lg:bg-secondary lg:min-h-screen ">
@@ -48,7 +44,7 @@ const SideNav = ({ navBarOpen, setNavBarOpen, children }) => {
         <div
           className={`font-bold text-3xl text-primary ${
             navBarOpen ? "hidden" : ""
-          } lg:block pl-4 h-auto`}
+          } lg:block pl-4 h-auto fixed`}
         >
           Bot AI
         </div>

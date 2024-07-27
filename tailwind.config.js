@@ -16,6 +16,7 @@ module.exports = {
       secondary: "#D7C7F4",
       white: "#FFFFFF",
       text: "#3C3C3C",
+      border: "#00000073"
     },
   },
   plugins: [],

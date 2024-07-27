@@ -21,9 +21,9 @@ const Main = () => {
   ];
 
   return (
-    <div className="flex-1 lg:ml-1/5 p-4 transition-all duration-300 h-screen relative justify-between">
+    <div className="flex-1 lg:ml-1/5 p-4 transition-all duration-300 h-screen relative md:justify-center md:items-center  lg:mb-8 lg:gap-10 lg:flex lg:flex-col">
       {/* needs to be hidden when chat starts  */}
-      <div className="flex flex-col justify-center items-center gap-2 text-center">
+      <div className="flex flex-col justify-center items-center gap-5 text-center pt-5 overflow-y-hidden">
         <div className="font-medium	text-3xl">How Can I Help You Today?</div>
         <div>
           <img
@@ -35,10 +35,10 @@ const Main = () => {
       </div>
 
       {/* suggestive questions */}
-      <div className="flex flex-col gap-5 md:grid md:grid-rows-2 md:grid-cols-2 lg:grid lg:grid-cols-2 mt-5">
+      <div className="flex flex-col gap-5 md:grid md:grid-rows-2 md:grid-cols-2 lg:grid lg:grid-cols-2 mt-5 snap-y	overscroll-contain">
         {demoQuestions.map((questionItem, id) => (
           <div
-            className="bg-white	rounded-md shadow-lg p-4"
+            className="bg-white	rounded-md shadow-lg p-4 cursor-pointer"
             key={questionItem.id}
           >
             <div className="font-bold	text-xl	">{questionItem.question}</div>
@@ -49,8 +49,11 @@ const Main = () => {
         ))}
       </div>
 
-      <div className="fixed bottom-0 left-0 right-0 flex items-center justify-center gap-2 pb-2">
-        <input type="text" className="w-64	h-10 rounded-md shadow-xl" />
+      <div className="fixed bottom-0 left-0 right-0 flex items-center justify-center gap-2 pb-2 ">
+        <input
+          type="text"
+          className="w-64	h-10 rounded-md shadow-xl border border-b-text"
+        />
         <button className="bg-secondary p-2 rounded-md text-base	font-normal shadow-xl">
           Ask
         </button>
