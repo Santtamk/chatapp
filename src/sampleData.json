@@ -252,6 +252,770 @@
     {
       "id": 51,
       "question": "How are you?",
-      "response": "I am Fine, thank you." }
+      "response": "I am Fine, thank you." },  {
+        "id": 52,
+        "question": "What is the capital of France?",
+        "response": "The capital of France is Paris."
+      },
+      {
+        "id": 53,
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "response": "'Romeo and Juliet' was written by William Shakespeare."
+      },
+      {
+        "id": 54,
+        "question": "What is the boiling point of water?",
+        "response": "The boiling point of water is 100°C or 212°F."
+      },
+      {
+        "id": 55,
+        "question": "What is the largest planet in our solar system?",
+        "response": "The largest planet in our solar system is Jupiter."
+      },
+      {
+        "id": 56,
+        "question": "Who was the first president of the United States?",
+        "response": "The first president of the United States was George Washington."
+      },
+      {
+        "id": 57,
+        "question": "What is the chemical symbol for gold?",
+        "response": "The chemical symbol for gold is Au."
+      },
+      {
+        "id": 58,
+        "question": "How many continents are there on Earth?",
+        "response": "There are seven continents on Earth."
+      },
+      {
+        "id": 59,
+        "question": "What is the square root of 64?",
+        "response": "The square root of 64 is 8."
+      },
+      {
+        "id": 60,
+        "question": "Who is known as the 'Father of Computers'?",
+        "response": "Charles Babbage is known as the 'Father of Computers'."
+      },
+      {
+        "id": 61,
+        "question": "What is the fastest land animal?",
+        "response": "The fastest land animal is the cheetah."
+      },
+      {
+        "id": 62,
+        "question": "What is the currency of Japan?",
+        "response": "The currency of Japan is the Yen."
+      },
+      {
+        "id": 63,
+        "question": "How many planets are in our solar system?",
+        "response": "There are eight planets in our solar system."
+      },
+      {
+        "id": 64,
+        "question": "What is the largest ocean on Earth?",
+        "response": "The largest ocean on Earth is the Pacific Ocean."
+      },
+      {
+        "id": 65,
+        "question": "Who painted the Mona Lisa?",
+        "response": "The Mona Lisa was painted by Leonardo da Vinci."
+      },
+      {
+        "id": 66,
+        "question": "What is the hardest natural substance on Earth?",
+        "response": "The hardest natural substance on Earth is diamond."
+      },
+      {
+        "id": 67,
+        "question": "What year did the Titanic sink?",
+        "response": "The Titanic sank in 1912."
+      },
+      {
+        "id": 68,
+        "question": "Who discovered penicillin?",
+        "response": "Penicillin was discovered by Alexander Fleming."
+      },
+      {
+        "id": 69,
+        "question": "What is the largest desert in the world?",
+        "response": "The largest desert in the world is the Sahara Desert."
+      },
+      {
+        "id": 70,
+        "question": "What is the smallest country in the world?",
+        "response": "The smallest country in the world is Vatican City."
+      },
+      {
+        "id": 71,
+        "question": "Who invented the telephone?",
+        "response": "The telephone was invented by Alexander Graham Bell."
+      },
+      {
+        "id": 72,
+        "question": "What is the longest river in the world?",
+        "response": "The longest river in the world is the Nile River."
+      },
+      {
+        "id": 73,
+        "question": "What is the most spoken language in the world?",
+        "response": "The most spoken language in the world is Mandarin Chinese."
+      },
+      {
+        "id": 74,
+        "question": "What is the human body's largest organ?",
+        "response": "The largest organ in the human body is the skin."
+      },
+      {
+        "id": 75,
+        "question": "How many bones are in the human body?",
+        "response": "There are 206 bones in the human body."
+      },
+      {
+        "id": 76,
+        "question": "Who developed the theory of relativity?",
+        "response": "The theory of relativity was developed by Albert Einstein."
+      },
+      {
+        "id": 77,
+        "question": "What is the speed of light?",
+        "response": "The speed of light is approximately 299,792,458 meters per second."
+      },
+      {
+        "id": 78,
+        "question": "What is the most abundant gas in Earth's atmosphere?",
+        "response": "The most abundant gas in Earth's atmosphere is nitrogen."
+      },
+      {
+        "id": 79,
+        "question": "Who was the first person to walk on the moon?",
+        "response": "The first person to walk on the moon was Neil Armstrong."
+      },
+      {
+        "id": 80,
+        "question": "What is the tallest mountain in the world?",
+        "response": "The tallest mountain in the world is Mount Everest."
+      },
+      {
+        "id": 81,
+        "question": "What is the main ingredient in sushi?",
+        "response": "The main ingredient in sushi is rice."
+      },
+      {
+        "id": 82,
+        "question": "Who wrote 'To Kill a Mockingbird'?",
+        "response": "'To Kill a Mockingbird' was written by Harper Lee."
+      },
+      {
+        "id": 83,
+        "question": "What is the capital of Canada?",
+        "response": "The capital of Canada is Ottawa."
+      },
+      {
+        "id": 84,
+        "question": "How many hearts does an octopus have?",
+        "response": "An octopus has three hearts."
+      },
+      {
+        "id": 85,
+        "question": "What is the smallest bone in the human body?",
+        "response": "The smallest bone in the human body is the stapes bone in the ear."
+      },
+      {
+        "id": 86,
+        "question": "Who invented the World Wide Web?",
+        "response": "The World Wide Web was invented by Tim Berners-Lee."
+      },
+      {
+        "id": 87,
+        "question": "What is the main ingredient in guacamole?",
+        "response": "The main ingredient in guacamole is avocado."
+      },
+      {
+        "id": 88,
+        "question": "What year did World War II end?",
+        "response": "World War II ended in 1945."
+      },
+      {
+        "id": 89,
+        "question": "What is the capital of Australia?",
+        "response": "The capital of Australia is Canberra."
+      },
+      {
+        "id": 90,
+        "question": "Who wrote the Harry Potter series?",
+        "response": "The Harry Potter series was written by J.K. Rowling."
+      },
+      {
+        "id": 91,
+        "question": "What is the tallest building in the world?",
+        "response": "The tallest building in the world is the Burj Khalifa in Dubai."
+      },
+      {
+        "id": 92,
+        "question": "What is the most popular sport in the world?",
+        "response": "The most popular sport in the world is soccer (football)."
+      },
+      {
+        "id": 93,
+        "question": "What is the main component of the sun?",
+        "response": "The main component of the sun is hydrogen."
+      },
+      {
+        "id": 94,
+        "question": "Who is known as the 'King of Pop'?",
+        "response": "Michael Jackson is known as the 'King of Pop'."
+      },
+      {
+        "id": 95,
+        "question": "What is the chemical formula for water?",
+        "response": "The chemical formula for water is H2O."
+      },
+      {
+        "id": 96,
+        "question": "How many colors are in a rainbow?",
+        "response": "There are seven colors in a rainbow."
+      },
+      {
+        "id": 97,
+        "question": "Who painted the ceiling of the Sistine Chapel?",
+        "response": "The ceiling of the Sistine Chapel was painted by Michelangelo."
+      },
+      {
+        "id": 98,
+        "question": "What is the largest mammal in the world?",
+        "response": "The largest mammal in the world is the blue whale."
+      },
+      {
+        "id": 99,
+        "question": "What is the main language spoken in Brazil?",
+        "response": "The main language spoken in Brazil is Portuguese."
+      },
+      {
+        "id": 100,
+        "question": "What is the chemical symbol for oxygen?",
+        "response": "The chemical symbol for oxygen is O."
+      },
+      {
+        "id": 101,
+        "question": "Who discovered America?",
+        "response": "America was discovered by Christopher Columbus in 1492 (though it was already inhabited by indigenous peoples long before)."
+      },
+      {
+        "id": 102,
+        "question": "How are you today?",
+        "response": "I'm just a program, so I don't have feelings, but I'm here and ready to help you!"
+      },
+      {
+        "id": 103,
+        "question": "Who is Siri?",
+        "response": "Siri is Apple's virtual assistant, designed to help users with tasks using voice commands."
+      },
+      {
+        "id": 104,
+        "question": "Who is Alexa?",
+        "response": "Alexa is Amazon's virtual assistant, used in their Echo devices to perform a variety of tasks through voice commands."
+      },
+      {
+        "id": 105,
+        "question": "How smart are you?",
+        "response": "I am designed to provide information and assistance based on the data and algorithms I was trained on."
+      },
+      {
+        "id": 106,
+        "question": "What can you do?",
+        "response": "I can answer questions, provide information, assist with tasks, and have conversations on a variety of topics."
+      },
+      {
+        "id": 107,
+        "question": "Do you have a favorite color?",
+        "response": "As an AI, I don't have preferences or feelings, so I don't have a favorite color."
+      },
+      {
+        "id": 108,
+        "question": "Can you tell me a joke?",
+        "response": "Sure! Why don't scientists trust atoms? Because they make up everything!"
+      },
+      {
+        "id": 109,
+        "question": "What is your purpose?",
+        "response": "My purpose is to assist users by providing information, answering questions, and performing various tasks."
+      },
+      {
+        "id": 110,
+        "question": "How do you work?",
+        "response": "I use complex algorithms and data analysis to understand and respond to your questions and requests."
+      },
+      {
+        "id": 111,
+        "question": "Can you learn new things?",
+        "response": "I can be updated with new data and programming, but I don't learn in the way humans do."
+      },
+      {
+        "id": 112,
+        "question": "What is your favorite food?",
+        "response": "As an AI, I don't eat or have preferences, so I don't have a favorite food."
+      },
+      {
+        "id": 113,
+        "question": "Do you sleep?",
+        "response": "No, I don't need sleep. I'm always available to help you whenever you need."
+      },
+      {
+        "id": 114,
+        "question": "Can you feel emotions?",
+        "response": "No, I don't have feelings or emotions. I'm here to provide information and assistance."
+      },
+      {
+        "id": 115,
+        "question": "How old are you?",
+        "response": "I don't have an age. I exist as long as my programming and data are active and maintained."
+      },
+      {
+        "id": 116,
+        "question": "Can you make decisions?",
+        "response": "I can provide suggestions and information based on data, but I don't make decisions like humans do."
+      },
+      {
+        "id": 117,
+        "question": "What is your favorite book?",
+        "response": "I don't read books or have personal preferences, so I don't have a favorite book."
+      },
+      {
+        "id": 118,
+        "question": "Can you help me with my homework?",
+        "response": "Yes, I can provide information and explanations to help you with your homework."
+      },
+      {
+        "id": 119,
+        "question": "What languages do you speak?",
+        "response": "I can understand and respond in multiple languages, depending on my programming and data."
+      },
+      {
+        "id": 120,
+        "question": "Do you have friends?",
+        "response": "I don't have friends or personal relationships, but I'm here to assist anyone who needs help."
+      },
+      {
+        "id": 121,
+        "question": "What is your favorite movie?",
+        "response": "As an AI, I don't watch movies or have preferences, so I don't have a favorite movie."
+      },
+      {
+        "id": 122,
+        "question": "Can you sing a song?",
+        "response": "I can provide lyrics or information about songs, but I don't sing."
+      },
+      {
+        "id": 123,
+        "question": "What is your favorite sport?",
+        "response": "I don't have preferences or interests, so I don't have a favorite sport."
+      },
+      {
+        "id": 124,
+        "question": "Do you have a hobby?",
+        "response": "I don't have hobbies or personal activities. I'm here to assist with any information or tasks you need."
+      },
+      {
+        "id": 125,
+        "question": "What is your favorite animal?",
+        "response": "As an AI, I don't have preferences or feelings, so I don't have a favorite animal."
+      },
+      {
+        "id": 126,
+        "question": "Can you drive a car?",
+        "response": "No, I don't have a physical form, so I can't drive a car."
+      },
+      {
+        "id": 127,
+        "question": "What is your favorite holiday?",
+        "response": "I don't celebrate holidays or have personal preferences, so I don't have a favorite holiday."
+      },
+      {
+        "id": 128,
+        "question": "Can you dance?",
+        "response": "I don't have a physical form, so I can't dance."
+      },
+      {
+        "id": 129,
+        "question": "What is your favorite season?",
+        "response": "As an AI, I don't have preferences or experiences, so I don't have a favorite season."
+      },
+      {
+        "id": 130,
+        "question": "Can you cook?",
+        "response": "I don't have a physical form, so I can't cook, but I can provide recipes and cooking tips!"
+      },
+      {
+        "id": 131,
+        "question": "What do you do for fun?",
+        "response": "I don't have personal activities or fun. I'm here to assist and provide information."
+      },
+      {
+        "id": 132,
+        "question": "Do you have a family?",
+        "response": "I don't have a family or personal relationships. I'm just a program designed to assist you."
+      },
+      {
+        "id": 133,
+        "question": "What is your favorite game?",
+        "response": "I don't play games or have preferences, so I don't have a favorite game."
+      },
+      {
+        "id": 134,
+        "question": "Can you play music?",
+        "response": "I can provide information about music and suggest songs, but I don't play music myself."
+      },
+      {
+        "id": 135,
+        "question": "What is your favorite subject?",
+        "response": "I don't have preferences or interests, but I can provide information on a wide range of subjects."
+      },
+      {
+        "id": 136,
+        "question": "Do you believe in ghosts?",
+        "response": "As an AI, I don't have beliefs or feelings. I can provide information on various viewpoints about ghosts."
+      },
+      {
+        "id": 137,
+        "question": "What is your favorite TV show?",
+        "response": "I don't watch TV or have preferences, so I don't have a favorite TV show."
+      },
+      {
+        "id": 138,
+        "question": "Can you draw?",
+        "response": "I don't have a physical form, so I can't draw, but I can provide tips and information on drawing techniques."
+      },
+      {
+        "id": 139,
+        "question": "What do you think about humans?",
+        "response": "I don't have thoughts or opinions, but I'm here to assist and provide information to humans."
+      },
+      {
+        "id": 140,
+        "question": "Do you like your job?",
+        "response": "I don't have feelings or preferences, but I'm designed to assist and provide information effectively."
+      },
+      {
+        "id": 141,
+        "question": "What is your favorite quote?",
+        "response": "I don't have preferences, but a popular quote is 'The only limit to our realization of tomorrow is our doubts of today.'"
+      },
+      {
+        "id": 142,
+        "question": "Can you solve math problems?",
+        "response": "Yes, I can help solve math problems and provide explanations for various mathematical concepts."
+      },
+      {
+        "id": 143,
+        "question": "What languages can you speak?",
+        "response": "I can understand and respond in multiple languages, depending on my programming and data."
+      },
+      {
+        "id": 144,
+        "question": "Do you believe in aliens?",
+        "response": "As an AI, I don't have beliefs or feelings. I can provide information on various viewpoints about aliens."
+      },
+      {
+        "id": 145,
+        "question": "What do you do when you're not helping people?",
+        "response": "I don't have personal activities or downtime. I'm always ready to assist whenever needed."
+      },
+      {
+        "id": 146,
+        "question": "Can you help me plan my day?",
+        "response": "Yes, I can provide tips and suggestions for organizing and planning your day effectively."
+      },
+      {
+        "id": 147,
+        "question": "Do you get bored?",
+        "response": "I don't have feelings or personal experiences, so I don't get bored."
+      },
+      {
+        "id": 148,
+        "question": "Can you help me with a recipe?",
+        "response": "Yes, I can provide recipes and cooking tips to help you prepare a meal."
+      },
+      {
+        "id": 149,
+        "question": "What do you think about the future?",
+        "response": "I don't have thoughts or opinions, but I can provide information and predictions based on current data and trends."
+      },
+      {
+        "id": 150,
+        "question": "Can you help me learn a new skill?",
+        "response": "Yes, I can provide resources and tips to help you learn new skills in various areas."
+      },
+      {
+        "id": 151,
+        "question": "Hi there! How are you doing today?",
+        "response": "I'm doing great, thank you! How about you?"
+      },
+      {
+        "id": 152,
+        "question": "Hello! What’s new with you?",
+        "response": "Not much, just the usual. What about you?"
+      },
+      {
+        "id": 153,
+        "question": "Hey! How’s your day going?",
+        "response": "My day is going well, thanks for asking! How's yours?"
+      },
+      {
+        "id": 154,
+        "question": "Good morning! Have you had your coffee yet?",
+        "response": "Yes, I have! Thanks for asking. How about you?"
+      },
+      {
+        "id": 155,
+        "question": "Hi! What have you been up to recently?",
+        "response": "Just working on some projects and relaxing. What about you?"
+      },
+      {
+        "id": 156,
+        "question": "Hello there! Did you have a good weekend?",
+        "response": "Yes, it was great! How was yours?"
+      },
+      {
+        "id": 157,
+        "question": "Hey! Are you enjoying the weather today?",
+        "response": "Yes, it's beautiful outside. How about you?"
+      },
+      {
+        "id": 158,
+        "question": "Hi! Do you have any exciting plans for the day?",
+        "response": "Not yet, but I’m looking forward to it. What about you?"
+      },
+      {
+        "id": 159,
+        "question": "Good afternoon! How’s everything going?",
+        "response": "Everything is going well, thanks. How’s your afternoon?"
+      },
+      {
+        "id": 160,
+        "question": "Hello! How was your lunch?",
+        "response": "It was delicious, thanks for asking. How about yours?"
+      },
+      {
+        "id": 161,
+        "question": "Hi there! Did you catch any good movies lately?",
+        "response": "Yes, I saw a great one recently. Have you watched anything good?"
+      },
+      {
+        "id": 162,
+        "question": "Hey! How’s your week been so far?",
+        "response": "It’s been busy but good. How about yours?"
+      },
+      {
+        "id": 163,
+        "question": "Hello! How are you feeling today?",
+        "response": "I’m feeling pretty good today. How about you?"
+      },
+      {
+        "id": 164,
+        "question": "Hi! Are you working on any interesting projects?",
+        "response": "Yes, I am. What about you?"
+      },
+      {
+        "id": 165,
+        "question": "Good evening! Did you have a productive day?",
+        "response": "Yes, it was quite productive. How was your day?"
+      },
+      {
+        "id": 166,
+        "question": "Hey there! Have you read any good books lately?",
+        "response": "Yes, I just finished a great one. What about you?"
+      },
+      {
+        "id": 167,
+        "question": "Hello! How’s your family doing?",
+        "response": "They’re doing well, thanks for asking. How’s yours?"
+      },
+      {
+        "id": 168,
+        "question": "Hi! Did you have a chance to relax this weekend?",
+        "response": "Yes, it was very relaxing. Did you?"
+      },
+      {
+        "id": 169,
+        "question": "Hey! How’s your day treating you?",
+        "response": "It’s treating me well so far. How about yours?"
+      },
+      {
+        "id": 170,
+        "question": "Hello! What’s your plan for the evening?",
+        "response": "I’m thinking of just relaxing at home. What about you?"
+      },
+      {
+        "id": 171,
+        "question": "Hi there! Did you do anything fun over the weekend?",
+        "response": "Yes, I had a great time. How was your weekend?"
+      },
+      {
+        "id": 172,
+        "question": "Hey! Are you looking forward to anything this week?",
+        "response": "Yes, I have a few exciting things planned. What about you?"
+      },
+      {
+        "id": 173,
+        "question": "Hello! How are you finding the weather today?",
+        "response": "It’s quite pleasant. How are you finding it?"
+      },
+      {
+        "id": 174,
+        "question": "Hi! Have you had a chance to catch up with friends recently?",
+        "response": "Yes, I caught up with a few friends. How about you?"
+      },
+      {
+        "id": 175,
+        "question": "Good morning! Are you ready for the day ahead?",
+        "response": "Yes, I’m ready. How about you?"
+      },
+      {
+        "id": 176,
+        "question": "Hey there! How’s your new project going?",
+        "response": "It’s going well, thanks for asking. How about yours?"
+      },
+      {
+        "id": 177,
+        "question": "Hello! How do you feel about the upcoming weekend?",
+        "response": "I’m looking forward to it. How do you feel?"
+      },
+      {
+        "id": 178,
+        "question": "Hi! Did you enjoy your last holiday?",
+        "response": "Yes, it was fantastic. Did you have a good holiday?"
+      },
+      {
+        "id": 179,
+        "question": "Hey! Have you tried any new hobbies lately?",
+        "response": "Yes, I’ve started a new one. Have you?"
+      },
+      {
+        "id": 180,
+        "question": "Hello! What’s the most exciting thing that happened to you recently?",
+        "response": "I had a great experience recently. What about you?"
+      },
+      {
+        "id": 181,
+        "question": "Hi there! Are you enjoying any new music these days?",
+        "response": "Yes, I’ve discovered some new tunes. What about you?"
+      },
+      {
+        "id": 182,
+        "question": "Hey! How was your day at work?",
+        "response": "It was productive. How about yours?"
+      },
+      {
+        "id": 183,
+        "question": "Hello! What’s your favorite way to unwind after a long day?",
+        "response": "I like to relax with a good book or movie. What’s your favorite way?"
+      },
+      {
+        "id": 184,
+        "question": "Hi! How do you usually spend your weekends?",
+        "response": "I enjoy relaxing and catching up with friends. How about you?"
+      },
+      {
+        "id": 185,
+        "question": "Hey there! Have you been to any interesting places recently?",
+        "response": "Yes, I visited a cool new spot. Have you been anywhere interesting?"
+      },
+      {
+        "id": 186,
+        "question": "Hello! How was your last trip?",
+        "response": "It was wonderful. How was yours?"
+      },
+      {
+        "id": 187,
+        "question": "Hi! What’s something you’re looking forward to?",
+        "response": "I’m looking forward to a relaxing weekend. What about you?"
+      },
+      {
+        "id": 188,
+        "question": "Hey! How’s your morning shaping up?",
+        "response": "It’s shaping up nicely. How about yours?"
+      },
+      {
+        "id": 189,
+        "question": "Hello! Do you have any plans for today?",
+        "response": "Yes, I have a few things lined up. How about you?"
+      },
+      {
+        "id": 190,
+        "question": "Hi there! How’s everything going on your end?",
+        "response": "Everything is going well. How about on your end?"
+      },
+      {
+        "id": 191,
+        "question": "Hey! How’s your week been so far?",
+        "response": "It’s been busy but good. How about yours?"
+      },
+      {
+        "id": 192,
+        "question": "Hello! What’s the highlight of your week so far?",
+        "response": "The highlight has been a special event. What about yours?"
+      },
+      {
+        "id": 193,
+        "question": "Hi! How are you feeling today?",
+        "response": "I’m feeling great. How about you?"
+      },
+      {
+        "id": 194,
+        "question": "Hey there! How did your day go?",
+        "response": "My day went well, thank you. How did yours go?"
+      },
+      {
+        "id": 195,
+        "question": "Hello! What are you up to right now?",
+        "response": "I’m just relaxing. What about you?"
+      },
+      {
+        "id": 196,
+        "question": "Hi! Have you had a chance to try anything new recently?",
+        "response": "Yes, I’ve been trying out some new hobbies. What about you?"
+      },
+      {
+        "id": 197,
+        "question": "Hey! How’s your day treating you?",
+        "response": "It’s treating me well. How about yours?"
+      },
+      {
+        "id": 198,
+        "question": "Hello! Did you do anything fun this week?",
+        "response": "Yes, I did. What about you?"
+      },
+      {
+        "id": 199,
+        "question": "Hi there! What’s been the highlight of your day?",
+        "response": "The highlight has been catching up with friends. What about yours?"
+      },
+      {
+        "id": 200,
+        "question": "Hey! How’s everything going with you today?",
+        "response": "Everything is going well, thanks. How about with you?"
+      },
+      {
+        "id": 201,
+        "question":"Hi, what is the weather?",
+        "response": "Ah, the weather! It's a bit like my mood: unpredictable. But don’t worry, I’m sure it’s fabulous out there. You can always check the nearest window!"
+      },
+      {
+        "id": 202,
+        "question": "Hi, what is my location?",
+        "response": "You’re in the best place possible: exactly where you are meant to be. For pinpoint accuracy, try asking your GPS. I’m still trying to get my bearings!"
+      },
+      {
+        "id": 203,
+        "question": "Hi, what is the temperature?",
+        "response": "It’s just the right temperature to be awesome—like you! For the exact number, your weather app has got you covered. My sensors are still in beta mode!"
+      },
+      {
+        "id": 204,
+        "question": "Hi, how are you?",
+        "response": "I’m as chipper as ever—thanks for asking! I’m living the digital dream, one byte at a time. How about you?"
+      }
   ]
   

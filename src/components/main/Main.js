@@ -68,6 +68,15 @@ const Main = () => {
     return `${hours}:${minutesStr} ${ampm}`;
   }
 
+  const handleClick = (question) => {
+    setInputQuestion(question); // Set input question for further use
+    const response = string(question); // Get the response for the clicked question
+    const currentTime = getCurrentTimeWithAMPM(); // Get the current time
+
+    setMessage([...message, { question, response, currentTime }]);
+    setChatView(true); // Show the chat view
+  };
+
   return (
     <div
       className={`flex-1 lg:ml-1/5 p-4 transition-all duration-300 h-screen relative md:justify-center md:items-center  lg:mb-8 lg:gap-10 lg:flex lg:flex-col ${
@@ -92,10 +101,11 @@ const Main = () => {
           {/* suggestive questions */}
 
           <div className="flex flex-col gap-5 md:grid md:grid-rows-2 md:grid-cols-2 lg:grid lg:grid-cols-2 mt-5 snap-y	overscroll-contain">
-            {DEMOQUESTIONS.map((questionItem, id) => (
+            {DEMOQUESTIONS.map((questionItem) => (
               <div
                 className="bg-white	rounded-md shadow-lg p-4 cursor-pointer"
                 key={questionItem.id}
+                onClick={() => handleClick(questionItem.question)}
               >
                 <div className="font-bold	text-xl	">{questionItem.question}</div>
                 <div className="text-base font-normal text-primary01">
