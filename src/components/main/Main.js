@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DATA from "../../sampleData.json";
+import Fuse from "fuse.js";
 
 const DEMOQUESTIONS = [
   {
@@ -22,32 +23,55 @@ const DEMOQUESTIONS = [
 
 const Main = () => {
   const [chatView, setChatView] = useState(false);
-  const [inputQuestion, setInputQuestion] = useState([]);
-  const [showAnswer, setShowAnswer] = useState("");
+  const [inputQuestion, setInputQuestion] = useState("");
+  const [message, setMessage] = useState([]);
+  // const [delay, setDelay] = useState(false);
 
-  // console.log("full data:", DATA);
-  // let input = "javascript?";
+  const fuse = new Fuse(DATA, {
+    keys: ["question"],
+    threshold: 0.3,
+  });
 
   function string(words) {
-    console.log("words:", words.split(" "));
-    let findWord = DATA.find((data) =>
-      data.question.toLowerCase().includes(words.toLowerCase())
-    );
-    setChatView(true);
-    if (findWord) {
-      // console.log("findWord:", findWord.question.split(" "));
-      // console.log("found word:", findWord);
-      setShowAnswer(findWord.answer);
+    let result = fuse.search(words);
+    if (result.length > 0) {
+      return result[0].item.response;
     } else {
-      setShowAnswer("As an AI Language Model, I don’t have the details");
+      return "As an AI Language Model, I don’t have the details";
     }
   }
-  // console.log(showAnswer);
+
+  const onAsk = () => {
+    if (inputQuestion.trim !== "") {
+      const currentTime = getCurrentTimeWithAMPM();
+      const response = string(inputQuestion);
+      setMessage([
+        ...message,
+        { question: inputQuestion, response, currentTime },
+      ]);
+      setInputQuestion("");
+      setChatView(true);
+    }
+  };
+
+  function getCurrentTimeWithAMPM() {
+    const now = new Date();
+    let hours = now.getHours();
+    const minutes = now.getMinutes();
+    const ampm = hours >= 12 ? "PM" : "AM";
+
+    // Converts hours from 24-hour format to 12-hour format
+    hours = hours % 12;
+    hours = hours ? hours : 12; // the hour '0' should be '12'
+    const minutesStr = minutes < 10 ? "0" + minutes : minutes;
+
+    return `${hours}:${minutesStr} ${ampm}`;
+  }
 
   return (
     <div
       className={`flex-1 lg:ml-1/5 p-4 transition-all duration-300 h-screen relative md:justify-center md:items-center  lg:mb-8 lg:gap-10 lg:flex lg:flex-col ${
-        chatView ? "flex items-end" : ""
+        chatView ? "flex items-end justify-start" : ""
       }`}
     >
       {/* needs to be hidden when chat starts  */}
@@ -82,26 +106,40 @@ const Main = () => {
           </div>
         </>
       ) : (
-        <div className="flex flex-col items-end justify-end">
-          <div className="flex gap-5 text-center">
-            <div>
-              <img
-                src="./botAi.png"
-                alt="botAi"
-                className="w-16 h-16 rounded-full drop-shadow-lg"
-              />
-            </div>
-            <div className="font-medium  text-3xl">{inputQuestion}</div>
-          </div>
-          <div className="flex gap-5 text-center">
-            <div>
-              <img
-                src="./botAi.png"
-                alt="botAi"
-                className="w-16 h-16 rounded-full drop-shadow-lg"
-              />
-            </div>
-            <div className="font-medium  text-3xl">{showAnswer}</div>
+        <div className="flex flex-col h-screen pb-10 py-14">
+          <div className="flex flex-col overflow-auto">
+            {message.map((msg, index) => (
+              <div key={index} className="flex flex-col gap-4">
+                <div className="flex bg-secondary bg-opacity-15 shadow-md rounded-md p-5 gap-2">
+                  <div>
+                    <img
+                      src="./you.png"
+                      alt="botAi"
+                      className="w-16 h-16 rounded-full drop-shadow-lg"
+                    />
+                  </div>
+                  <div>
+                    <div className="text-base	font-bold	">You</div>
+                    <div className="font-normal	text-base">{msg.question}</div>
+                    <div>{msg.currentTime}</div>
+                  </div>
+                </div>
+                <div className="flex bg-secondary bg-opacity-15 shadow-md rounded-md p-5 gap-2 mb-5 transition delay-700 duration-300 ease-in-out">
+                  <div>
+                    <img
+                      src="./botAi.png"
+                      alt="botAi"
+                      className="max-w-none w-16 h-16 rounded-full drop-shadow-lg"
+                    />
+                  </div>
+                  <div>
+                    <div className="text-base	font-bold	">Anoter AI</div>
+                    <div className="font-normal	text-base">{msg.response}</div>
+                    <div>{msg.currentTime}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       )}
@@ -111,12 +149,12 @@ const Main = () => {
         <input
           type="text"
           className="w-64	h-10 rounded-md shadow-xl border border-b-text"
-          value={[...inputQuestion]}
+          value={inputQuestion}
           onChange={(e) => setInputQuestion(e.target.value)}
         />
         <button
           className="bg-secondary p-2 rounded-md text-base	font-normal shadow-xl"
-          onClick={() => string(inputQuestion)}
+          onClick={onAsk}
         >
           Ask
         </button>
