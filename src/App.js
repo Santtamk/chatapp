@@ -27,6 +27,7 @@ function App() {
           navBarOpen={navBarOpen}
           pastConversationView={pastConversationView}
           pastConversation={pastConversation}
+          setPastConversationView={setPastConversationView}
         />
       </SideNav>
     </div>

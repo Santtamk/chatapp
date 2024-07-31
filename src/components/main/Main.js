@@ -22,7 +22,7 @@ const DEMOQUESTIONS = [
   },
 ];
 
-const Main = ({ pastConversation, pastConversationView }) => {
+const Main = ({ pastConversation, setPastConversationView, pastConversationView }) => {
   const [chatView, setChatView] = useState(false);
   const [inputQuestion, setInputQuestion] = useState("");
   const [message, setMessage] = useState([]);
@@ -86,6 +86,9 @@ const Main = ({ pastConversation, pastConversationView }) => {
 
   const saveTOLocal = () => {
     localStorage.setItem("chatHistory", JSON.stringify(message));
+    setMessage([]);
+    setChatView(false);
+    setPastConversationView(false);
   };
 
   return (
