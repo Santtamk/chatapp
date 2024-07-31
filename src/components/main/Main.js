@@ -26,7 +26,6 @@ const Main = ({ pastConversation, setPastConversationView, pastConversationView 
   const [chatView, setChatView] = useState(false);
   const [inputQuestion, setInputQuestion] = useState("");
   const [message, setMessage] = useState([]);
-  // const [delay, setDelay] = useState(false);
   console.log("pastConversation:", pastConversation);
   const fuse = new Fuse(DATA, {
     keys: ["question"],
