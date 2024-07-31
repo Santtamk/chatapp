@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DATA from "../../sampleData.json";
 import Fuse from "fuse.js";
+import Chat from "./Chat";
 
 const DEMOQUESTIONS = [
   {
@@ -21,16 +22,23 @@ const DEMOQUESTIONS = [
   },
 ];
 
-const Main = () => {
+const Main = ({ pastConversation, pastConversationView }) => {
   const [chatView, setChatView] = useState(false);
   const [inputQuestion, setInputQuestion] = useState("");
   const [message, setMessage] = useState([]);
   // const [delay, setDelay] = useState(false);
-
+  console.log("pastConversation:", pastConversation);
   const fuse = new Fuse(DATA, {
     keys: ["question"],
     threshold: 0.3,
   });
+
+  useEffect(() => {
+    if (pastConversationView && pastConversation.length > 0) {
+      setChatView(true);
+      setMessage(pastConversation);
+    }
+  }, [pastConversationView, pastConversation]);
 
   function string(words) {
     let result = fuse.search(words);
@@ -72,9 +80,12 @@ const Main = () => {
     setInputQuestion(question); // Set input question for further use
     const response = string(question); // Get the response for the clicked question
     const currentTime = getCurrentTimeWithAMPM(); // Get the current time
-
     setMessage([...message, { question, response, currentTime }]);
     setChatView(true); // Show the chat view
+  };
+
+  const saveTOLocal = () => {
+    localStorage.setItem("chatHistory", JSON.stringify(message));
   };
 
   return (
@@ -85,7 +96,7 @@ const Main = () => {
     >
       {/* needs to be hidden when chat starts  */}
       {/* chat section */}
-      {!chatView ? (
+      {!chatView && !pastConversationView && (
         <>
           <div className="flex flex-col justify-center items-center gap-5 text-center pt-5 overflow-y-hidden">
             <div className="font-medium	text-3xl">How Can I Help You Today?</div>
@@ -115,63 +126,38 @@ const Main = () => {
             ))}
           </div>
         </>
-      ) : (
+      )}
+
+      {/* chatView */}
+      {(chatView || pastConversationView) && (
         <div className="flex flex-col h-screen pb-10 py-14">
-          <div className="flex flex-col overflow-auto">
-            {message.map((msg, index) => (
-              <div key={index} className="flex flex-col gap-4">
-                <div className="flex bg-secondary bg-opacity-15 shadow-md rounded-md p-5 gap-2">
-                  <div>
-                    <img
-                      src="./you.png"
-                      alt="botAi"
-                      className="w-16 h-16 rounded-full drop-shadow-lg"
-                    />
-                  </div>
-                  <div>
-                    <div className="text-base	font-bold	">You</div>
-                    <div className="font-normal	text-base">{msg.question}</div>
-                    <div>{msg.currentTime}</div>
-                  </div>
-                </div>
-                <div className="flex bg-secondary bg-opacity-15 shadow-md rounded-md p-5 gap-2 mb-5 transition delay-700 duration-300 ease-in-out">
-                  <div>
-                    <img
-                      src="./botAi.png"
-                      alt="botAi"
-                      className="max-w-none w-16 h-16 rounded-full drop-shadow-lg"
-                    />
-                  </div>
-                  <div>
-                    <div className="text-base	font-bold	">Anoter AI</div>
-                    <div className="font-normal	text-base">{msg.response}</div>
-                    <div>{msg.currentTime}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+          <Chat conversationMap={message} />
         </div>
       )}
-      {/* chat section ends  */}
 
-      <div className="fixed bottom-0 left-0 right-0 flex items-center justify-center gap-2 pb-2 ">
-        <input
-          type="text"
-          className="w-64	h-10 rounded-md shadow-xl border border-b-text"
-          value={inputQuestion}
-          onChange={(e) => setInputQuestion(e.target.value)}
-        />
-        <button
-          className="bg-secondary p-2 rounded-md text-base	font-normal shadow-xl"
-          onClick={onAsk}
-        >
-          Ask
-        </button>
-        <button className="bg-secondary p-2 text-base	rounded-md shadow-xl font-normal">
-          Save
-        </button>
-      </div>
+      {/* chat section ends  */}
+      {pastConversationView ? null : (
+        <div className="fixed bottom-0 left-0 right-0 flex items-center justify-center gap-2 pb-2 ">
+          <input
+            type="text"
+            className="w-64	h-10 rounded-md shadow-xl border border-b-text"
+            value={inputQuestion}
+            onChange={(e) => setInputQuestion(e.target.value)}
+          />
+          <button
+            className="bg-secondary p-2 rounded-md text-base	font-normal shadow-xl"
+            onClick={onAsk}
+          >
+            Ask
+          </button>
+          <button
+            className="bg-secondary p-2 text-base	rounded-md shadow-xl font-normal"
+            onClick={saveTOLocal}
+          >
+            Save
+          </button>
+        </div>
+      )}
     </div>
   );
 };

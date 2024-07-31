@@ -1,12 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-   "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       backgroundImage: {
-        'text01-gradient': 'linear-gradient(180deg, #FFFFFF 0%, #9785BA 100%)',
+        "text01-gradient": "linear-gradient(180deg, #FFFFFF 0%, #9785BA 100%)",
       },
     },
     colors: {
@@ -16,7 +14,7 @@ module.exports = {
       secondary: "#D7C7F4",
       white: "#FFFFFF",
       text: "#3C3C3C",
-      border: "#00000073"
+      border: "#00000073",
     },
   },
   plugins: [],

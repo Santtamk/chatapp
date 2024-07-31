@@ -1,4 +1,9 @@
-const SideNav = ({ navBarOpen, setNavBarOpen, children }) => {
+const SideNav = ({
+  navBarOpen,
+  setNavBarOpen,
+  children,
+  getFromLocalStorage,
+}) => {
   return (
     <div className="flex flex-start">
       <aside className="lg:flex lg:flex-col lg:w-1/5 lg:bg-secondary lg:min-h-screen ">
@@ -35,7 +40,10 @@ const SideNav = ({ navBarOpen, setNavBarOpen, children }) => {
               &times;
             </button>
           </div>
-          <div className="bg-white h-screen text-center p-4">
+          <div
+            className="bg-white h-screen text-center p-4"
+            onClick={getFromLocalStorage}
+          >
             <div className="bg-secondary rounded">Past Conversations</div>
           </div>
         </div>
